@@ -1,9 +1,11 @@
-/* GLOBAL */
-
-*{margin:0;padding:0;box-sizing:border-box}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
 body{
-font-family:Inter, sans-serif;
+font-family:Inter,sans-serif;
 background:#0b0b12;
 color:#fff;
 line-height:1.6;
@@ -22,7 +24,6 @@ background:#0b0b12;
 border-bottom:1px solid #1e1e2a;
 position:sticky;
 top:0;
-z-index:100;
 }
 
 .nav-inner{
@@ -32,22 +33,21 @@ align-items:center;
 }
 
 .logo{
-font-family:'Press Start 2P', cursive;
-color:#5EC3E6;
+font-family:'Press Start 2P',cursive;
 font-size:12px;
+color:#5EC3E6;
 text-decoration:none;
 }
 
 .nav-links{
 display:flex;
-gap:25px;
+gap:20px;
 list-style:none;
 }
 
 .nav-links a{
 color:#aaa;
 text-decoration:none;
-font-size:14px;
 }
 
 .nav-links a:hover{
@@ -57,9 +57,9 @@ color:#5EC3E6;
 /* HERO */
 
 .hero{
-text-align:center;
 padding:120px 20px;
-background:radial-gradient(circle,#162030,#0b0b12);
+text-align:center;
+background:radial-gradient(circle,#1b2230,#0b0b12);
 }
 
 .hero h1{
@@ -72,22 +72,29 @@ color:#9a9ab0;
 margin-bottom:20px;
 }
 
-.btn{
+/* BUTTON */
+
+.btn-primary{
 background:#5EC3E6;
 color:#000;
 padding:12px 22px;
 border-radius:6px;
 font-weight:bold;
 text-decoration:none;
+border:none;
 }
 
-/* SHELF CARDS */
+/* SHELF */
+
+.shelves{
+margin-top:80px;
+}
 
 .choose-grid{
 display:grid;
 grid-template-columns:1fr 1fr;
 gap:40px;
-margin-top:60px;
+margin-top:40px;
 }
 
 .shelf-card{
@@ -102,14 +109,42 @@ transition:.3s;
 
 .shelf-card:hover{
 border-color:#5EC3E6;
-box-shadow:0 0 25px rgba(94,195,230,.3);
+box-shadow:0 0 20px rgba(94,195,230,.3);
+}
+
+/* TRUST */
+
+.trust{
+margin-top:60px;
+}
+
+.trust-grid{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+color:#aaa;
+}
+
+/* EMAIL */
+
+.email-capture{
+margin-top:80px;
+padding:80px 20px;
+text-align:center;
+background:#12121a;
+}
+
+.email-capture input{
+padding:10px;
+margin-right:10px;
 }
 
 /* FOOTER */
 
 footer{
 border-top:1px solid #1e1e2a;
-padding:40px 20px;
+padding:60px 20px;
 margin-top:80px;
 }
 
@@ -128,4 +163,26 @@ text-decoration:none;
 
 footer a:hover{
 color:#5EC3E6;
+}
+
+/* COOKIE BANNER */
+
+#cookie-banner{
+position:fixed;
+bottom:0;
+left:0;
+width:100%;
+background:#111;
+color:#fff;
+padding:15px;
+display:flex;
+justify-content:center;
+gap:20px;
+z-index:999;
+}
+
+#cookie-banner button{
+background:#5EC3E6;
+border:none;
+padding:8px 14px;
 }
