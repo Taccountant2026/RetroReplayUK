@@ -250,42 +250,81 @@ transform:translateY(-4px);
 PRODUCT GRID
 ========================= */
 
-.product-grid{
+.product-card-main{
+
+background:var(--bg-panel);
+border:1px solid var(--border);
+padding:40px;
+border-radius:14px;
+text-align:center;
+max-width:900px;
+margin:auto;
+
+box-shadow:0 10px 25px rgba(0,0,0,.05);
+
+}
+
+.product-desc{
+
+color:var(--text-muted);
+margin-top:10px;
+
+}
+
+.product-main-img{
+
+width:100%;
+max-width:650px;
+border-radius:10px;
+margin-top:30px;
+
+}
+
+.product-price{
+
+margin-top:25px;
+color:var(--retro-cyan);
+font-size:36px;
+
+}
+
+.shipping-note{
+
+color:var(--text-muted);
+font-size:14px;
+margin-bottom:20px;
+
+}
+
+.secure-note{
+
+margin-top:15px;
+font-size:13px;
+color:var(--text-muted);
+
+}
+
+.paypal-icons{
+
+margin-top:10px;
+height:26px;
+
+}
+
+.product-gallery{
 
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:30px;
+grid-template-columns:1fr 1fr;
+gap:20px;
 margin-top:40px;
 
 }
 
-.product-card{
+.product-gallery img{
 
-background:var(--bg-panel);
+width:100%;
+border-radius:10px;
 
-padding:30px;
-
-border-radius:12px;
-
-border:1px solid var(--border);
-
-transition:.3s;
-
-}
-
-.product-card:hover{
-
-border-color:var(--retro-cyan);
-
-box-shadow:
-0 0 15px rgba(58,168,216,.2);
-
-transform:translateY(-4px);
-
-}
-
-.product-card h3{
-margin-bottom:10px;
 }
 
 /* =========================
