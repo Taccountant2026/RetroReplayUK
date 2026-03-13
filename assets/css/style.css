@@ -299,3 +299,71 @@ gap:15px;
 }
 
 }
+
+/* =========================
+MARKETPLACE LINKS
+========================= */
+
+.marketplace{
+
+margin-top:100px;
+
+text-align:center;
+
+}
+
+.marketplace-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+
+gap:25px;
+
+margin-top:40px;
+
+}
+
+.market-card{
+
+background:#f5f9ff;
+
+border:1px solid #dce6f3;
+
+padding:30px 20px;
+
+border-radius:12px;
+
+text-decoration:none;
+
+color:#1a1a1a;
+
+transition:.25s;
+
+}
+
+.market-card h3{
+
+color:#3aa8d8;
+
+margin-bottom:6px;
+
+}
+
+.market-card p{
+
+font-size:14px;
+
+color:#6b7a90;
+
+}
+
+.market-card:hover{
+
+transform:translateY(-4px);
+
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+border-color:#3aa8d8;
+
+}
