@@ -4,372 +4,232 @@ padding:0;
 box-sizing:border-box;
 }
 
-body{
+/* COLORS */
 
-font-family:'Inter',sans-serif;
+:root{
 
-background:#ffffff;
+--retro-cyan:#3aa8d8;
+--bg-panel:#f5f9ff;
+--border:#dce6f3;
 
-color:#1a1a1a;
-
-line-height:1.6;
+--text-main:#1a1a1a;
+--text-muted:#6b7a90;
 
 }
 
+body{
+font-family:'Inter',sans-serif;
+background:#ffffff;
+color:var(--text-main);
+line-height:1.6;
+}
+
 .container{
-
 max-width:1100px;
-
 margin:auto;
-
 padding:20px;
-
 }
 
 /* NAVBAR */
 
 .navbar{
-
 position:sticky;
-
 top:0;
-
 background:white;
-
-border-bottom:1px solid #dce6f3;
-
+border-bottom:1px solid var(--border);
 z-index:1000;
-
 }
 
 .nav-inner{
-
 display:flex;
-
 justify-content:space-between;
-
 align-items:center;
-
 }
 
 .logo img{
-
 height:40px;
-
 }
 
 .nav-links{
-
 display:flex;
-
 gap:25px;
-
 list-style:none;
-
 }
 
 .nav-links a{
-
 text-decoration:none;
-
-color:#6b7a90;
-
+color:var(--text-muted);
 font-size:14px;
-
 }
 
 /* HERO */
 
 .hero{
-
 text-align:center;
-
 padding:120px 20px;
-
 background:radial-gradient(circle,#eaf3ff 0%,#ffffff 70%);
-
 }
 
 .hero h1{
-
 font-size:50px;
-
 margin-bottom:10px;
-
 }
 
 .hero p{
-
-color:#6b7a90;
-
+color:var(--text-muted);
 margin-bottom:30px;
-
 }
 
 /* BUTTON */
 
 .btn-primary{
-
-background:#3aa8d8;
-
+background:var(--retro-cyan);
 color:white;
-
 padding:14px 28px;
-
 border-radius:8px;
-
 border:none;
-
 font-weight:700;
-
 cursor:pointer;
-
+min-height:48px;
 }
 
 /* PRODUCT */
 
 .product-section{
-
 margin-top:80px;
-
 }
 
 .product-card{
-
-background:#f5f9ff;
-
+background:var(--bg-panel);
 padding:50px;
-
 border-radius:14px;
-
-border:1px solid #dce6f3;
-
+border:1px solid var(--border);
 text-align:center;
-
 max-width:800px;
-
 margin:auto;
-
 }
 
 .product-image{
-
 max-width:600px;
-
+width:100%;
 margin:30px auto;
-
 }
 
 .price{
-
 font-size:36px;
-
-color:#3aa8d8;
-
+color:var(--retro-cyan);
 margin-top:10px;
-
 }
 
 .shipping{
-
-color:#6b7a90;
-
+color:var(--text-muted);
 margin-bottom:20px;
-
 }
 
 .bundle{
-
 list-style:none;
-
 margin:20px 0;
-
-color:#6b7a90;
-
+color:var(--text-muted);
 }
 
 /* PROCESS */
 
 .process{
-
 margin-top:100px;
-
 text-align:center;
-
 }
 
 .process-grid{
-
 display:grid;
-
 grid-template-columns:repeat(4,1fr);
-
 gap:40px;
-
 margin-top:40px;
-
 }
 
 /* TRUST */
 
 .trust{
-
 margin-top:100px;
-
 }
 
 .trust-grid{
-
 display:flex;
-
 justify-content:center;
-
 gap:40px;
-
-color:#6b7a90;
-
+color:var(--text-muted);
+flex-wrap:wrap;
 }
 
 /* FAQ */
 
 .faq{
-
 margin-top:100px;
-
 max-width:700px;
-
 }
 
 .faq-item{
-
 margin-top:20px;
-
 }
 
 /* FINAL CTA */
 
 .final-cta{
-
 text-align:center;
-
 margin-top:120px;
-
 padding:80px 20px;
-
-background:#f5f9ff;
-
+background:var(--bg-panel);
 }
 
 /* FOOTER */
 
 footer{
-
 margin-top:80px;
-
-border-top:1px solid #dce6f3;
-
+border-top:1px solid var(--border);
 padding:40px;
-
 text-align:center;
-
 }
 
-/* MOBILE */
-
-@media (max-width:768px){
-
-.hero h1{
-
-font-size:36px;
-
-}
-
-.process-grid{
-
-grid-template-columns:1fr;
-
-}
-
-.trust-grid{
-
-flex-direction:column;
-
-gap:15px;
-
-}
-
-}
-
-/* =========================
-MARKETPLACE LINKS
-========================= */
+/* MARKETPLACE LINKS */
 
 .marketplace{
-
 margin-top:100px;
-
 text-align:center;
-
 }
 
 .marketplace-grid{
-
 display:grid;
-
 grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-
 gap:25px;
-
 margin-top:40px;
-
 }
 
 .market-card{
-
-background:#f5f9ff;
-
-border:1px solid #dce6f3;
-
+background:var(--bg-panel);
+border:1px solid var(--border);
 padding:30px 20px;
-
 border-radius:12px;
-
 text-decoration:none;
-
-color:#1a1a1a;
-
+color:var(--text-main);
 transition:.25s;
-
 }
 
 .market-card h3{
-
-color:#3aa8d8;
-
+color:var(--retro-cyan);
 margin-bottom:6px;
-
 }
 
 .market-card p{
-
 font-size:14px;
-
-color:#6b7a90;
-
+color:var(--text-muted);
 }
 
 .market-card:hover{
-
 transform:translateY(-4px);
-
 box-shadow:0 8px 20px rgba(0,0,0,.08);
-
-border-color:#3aa8d8;
-
+border-color:var(--retro-cyan);
 }
-/* =========================
-FEEDBACK SHOWCASE
-========================= */
+
+/* FEEDBACK SHOWCASE */
 
 .feedback-showcase{
 margin-top:100px;
@@ -412,7 +272,7 @@ font-size:13px;
 color:var(--text-muted);
 }
 
-/* Trust badges */
+/* TRUST BADGES */
 
 .trust-badges{
 margin-top:40px;
@@ -423,9 +283,51 @@ flex-wrap:wrap;
 }
 
 .trust-box{
-background:#f5f9ff;
+background:var(--bg-panel);
 border:1px solid var(--border);
 padding:12px 18px;
 border-radius:8px;
 font-size:14px;
+}
+
+/* MOBILE OPTIMISATION */
+
+@media (max-width:768px){
+
+.nav-inner{
+flex-direction:column;
+gap:10px;
+}
+
+.nav-links{
+flex-wrap:wrap;
+justify-content:center;
+gap:12px;
+}
+
+.hero{
+padding:90px 20px;
+}
+
+.hero h1{
+font-size:34px;
+}
+
+.product-card{
+padding:30px 20px;
+}
+
+.price{
+font-size:30px;
+}
+
+.process-grid{
+grid-template-columns:1fr;
+}
+
+.trust-grid{
+flex-direction:column;
+gap:15px;
+}
+
 }
