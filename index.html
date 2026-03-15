@@ -136,8 +136,6 @@ Secure checkout powered by PayPal
 
 </section>
   
-
-
 <section class="container product-section">
 
 <div class="product-card">
@@ -145,12 +143,11 @@ Secure checkout powered by PayPal
 <h2>PlayStation 2 Wireless Controller</h2>
 
 <p class="product-desc">
-2.4GHz wireless controller for PlayStation 2 with receiver included.
-Perfect add-on for your PS2 setup.
+2.4GHz wireless controller for PlayStation 2 with receiver included. Perfect add-on for your PS2 setup.
 </p>
 
 <img src="assets/images/ps2-controller.jpg"
-alt="PS2 Wireless Controller"
+alt="PlayStation 2 Wireless Controller"
 class="product-image">
 
 <h3 class="price">£19.99</h3>
@@ -167,19 +164,13 @@ class="product-image">
 
 </ul>
 
-<div id="paypal-container-XMCGR5JYE9ASL"></div>
+<form action="https://www.paypal.com/ncp/payment/XMCGR5JYE9ASL" method="post" target="_blank">
 
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  if (window.paypal) {
-    paypal.HostedButtons({
-      hostedButtonId: "XMCGR5JYE9ASL"
-    }).render("#paypal-container-XMCGR5JYE9ASL");
-  } else {
-    console.error("PayPal SDK not loaded.");
-  }
-});
-</script>
+<button class="btn-primary">
+Buy Now
+</button>
+
+</form>
 
 <p class="secure">
 Secure checkout powered by PayPal
