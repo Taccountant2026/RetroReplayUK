@@ -170,10 +170,14 @@ class="product-image">
 <div id="paypal-container-XMCGR5JYE9ASL"></div>
 
 <script>
-window.addEventListener("load", function () {
-paypal.HostedButtons({
-hostedButtonId: "XMCGR5JYE9ASL",
-}).render("#paypal-container-XMCGR5JYE9ASL");
+document.addEventListener("DOMContentLoaded", function () {
+  if (window.paypal) {
+    paypal.HostedButtons({
+      hostedButtonId: "XMCGR5JYE9ASL"
+    }).render("#paypal-container-XMCGR5JYE9ASL");
+  } else {
+    console.error("PayPal SDK not loaded.");
+  }
 });
 </script>
 
@@ -184,7 +188,6 @@ Secure checkout powered by PayPal
 </div>
 
 </section>
-  
 
 <section class="feedback-showcase">
 
