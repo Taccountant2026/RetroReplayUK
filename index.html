@@ -58,6 +58,25 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+<!-- Logo resolution fix -->
+<style>
+.logo img{
+height:60px;
+width:auto;
+image-rendering:auto;
+}
+</style>
+
+<!-- Google Consent Mode -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+
+gtag('consent','default',{
+analytics_storage:'denied'
+});
+</script>
   
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-PF6Q3TSMVL"></script>
@@ -410,6 +429,24 @@ Buy Now
 </form>
 
 </div>
+
+<div id="cookie-banner" style="position:fixed;bottom:0;left:0;width:100%;background:#111;color:#fff;padding:15px;text-align:center;z-index:9999;font-size:14px;">
+This site uses cookies for analytics to improve your experience.
+<button onclick="acceptCookies()" style="margin-left:10px;padding:6px 12px;">Accept</button>
+</div>
+
+<script>
+function acceptCookies(){
+gtag('consent','update',{analytics_storage:'granted'});
+document.getElementById('cookie-banner').style.display='none';
+localStorage.setItem('cookieConsent','accepted');
+}
+
+if(localStorage.getItem('cookieConsent')==='accepted'){
+gtag('consent','update',{analytics_storage:'granted'});
+document.getElementById('cookie-banner').style.display='none';
+}
+</script>
   
 </body>
 </html>
